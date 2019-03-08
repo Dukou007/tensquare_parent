@@ -29,7 +29,7 @@ public class FriendController {
         //获取当前登录人信息
         Claims claims=(Claims)request.getAttribute("user_claims");
         if(claims==null){
-            return new Result(false, StatusCode.ACCESSERROR,"请登录");
+            return new Result(false, StatusCode.ACCESSERROR,"请登录！");
         }
 
         if(type.equals("1")){//添加好友
